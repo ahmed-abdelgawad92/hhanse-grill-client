@@ -60,14 +60,14 @@ li.nav-item a{
    color: black !important;
 }
 li.active{
-  background-color: rgb(255, 85, 31) !important;
+  background-color: rgb(255, 60, 60) !important;
   /* background-color: rgb(255, 31, 31) !important; */
 }
 li.active a{
   color: rgb(242, 255, 0) !important;
 }
 .nav-item:hover{
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(246, 255, 151);
 }
 .navbar{
    padding: 0;
