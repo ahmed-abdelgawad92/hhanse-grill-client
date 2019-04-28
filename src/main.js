@@ -3,9 +3,12 @@ import App from './App.vue'
 import router from './routes';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://127.0.0.1:8000/api/';
+axios.defaults.baseURL = 'https://api.hhansegrill-halal.de/api/';
+// axios.defaults.baseURL = 'http://127.0.0.1:8000/api/';
+
+Vue.prototype.$domain = 'https://api.hhansegrill-halal.de/';
+// Vue.prototype.$domain = 'http://127.0.0.1:8000/';
 Vue.prototype.$http = axios;
-Vue.prototype.$domain = 'http://127.0.0.1:8000/';
 
 Vue.filter('capitalize', value => {
   return value ? value.split(' ').map(v => v.charAt(0).toUpperCase() + v.slice(1)).join(' ') : '';
