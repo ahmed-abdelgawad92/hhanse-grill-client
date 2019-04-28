@@ -1,7 +1,7 @@
 <template>
    <div class="container">
       <h1 class="text-center text-muted mt-4">Die Speisekarte</h1>
-      <div class="row">
+      <div class="row" v-if="karte">
          <div class="col-12 col-lg-6 col-xl-6">
             <karte-category :category="karte[categoryIndex[0]]" class="mt-5"></karte-category>
             <karte-category :category="karte[categoryIndex[6]]" class="mt-5"></karte-category>
@@ -24,7 +24,7 @@
    export default {
       data: () => {
          return {
-            karte: [],
+            karte: undefined,
             categoryIndex: [
                'Super-Spar-Menüs',
                'Croque',

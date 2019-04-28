@@ -4,7 +4,7 @@
       <div v-for="item in menuItems" :key="item.id" class="menu-item" :class="{'not-available' : !item.available}">
          <div class="p-4">
             <div class="row">
-            <div class="col-9">
+            <div class="col-8 col-sm-9">
                <h2>
                   <span>{{romanNumbers[item.row_order]}} -</span>
                   {{item.meal.name | capitalize}}
@@ -12,7 +12,7 @@
                </h2>
                <div class="ingredients">{{getIngredient(item)}}</div>
             </div>
-            <div class="col-3">
+            <div class="col-4 col-sm-3">
                <h2 class="price">{{item.price | currency}}</h2>
             </div>
             </div>

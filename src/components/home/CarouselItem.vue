@@ -16,7 +16,14 @@
 </script>
 
 <style scoped>
-  img{
-    height: 80vh;
+  @media screen and (max-width: 900px){
+    img{
+      height: 50vh;
+    }
+  }
+  @media screen and (min-width: 901px){
+    img{
+      height: 90vh;
+    }
   }
 </style>

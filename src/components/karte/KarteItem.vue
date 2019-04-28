@@ -1,7 +1,7 @@
 <template>
   <div class="row" :class="{'white': index % 2 == 0}">
-    <div class="col-10 py"><strong class="meal-name">{{item.meal | capitalize}}</strong> <span class="details">{{item.ingredient | capitalize}}</span></div>
-    <div class="col-2 price">{{item.price | currency}}</div>
+    <div class="col-9 py"><strong class="meal-name">{{item.meal | capitalize}}</strong> <span class="details">{{item.ingredient | capitalize}}</span></div>
+    <div class="col-3 price">{{item.price | currency}}</div>
   </div>
 </template>
 
@@ -31,6 +31,7 @@
 }
 .price{
   font-size: 18px;
+  text-align: right;
 }
 .py{
   padding: 5px 0 5px 10px;
